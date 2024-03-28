@@ -1,5 +1,3 @@
-import { CardProps } from "@/components/StatCard";
-import { ProjectData } from "@/components/Tables/Projects";
 import { Power, Loader, CheckCircle2 } from "lucide-react";
 export const notificationContent = [
   {
@@ -63,72 +61,72 @@ export const messagesContent = [
   },
 ];
 
-export const cardData: CardProps[] = [
+export const directorsRows = [
   {
-    label: "Start",
-    amount: "1",
-    discription: "Project(s) Started",
-    icon: Power,
+    label: "Person/Company",
+    for: "type",
   },
   {
-    label: "In-Processing",
-    amount: "0",
-    discription: "Project(s) In-Processing",
-    icon: Loader,
+    label: "Surname",
+    for: "surname",
   },
   {
-    label: "Completed",
-    amount: "0",
-    discription: "Project(s) Completed",
-    icon: CheckCircle2,
+    label: "Name",
+    for: "name",
   },
-];
-
-export const data: ProjectData[] = [
   {
-    id: "m5gr84i9",
-    status: "In-Processing",
-    company: "ABCD",
-    project: "Incorporation",
-    start: "01-03-2024",
-    due: "31-03-2024",
-    published: 2,
-    processBy: "Yon Roe",
+    label: "ID/Company No.",
+    for: "idNo",
+  },
+  {
+    label: "Address",
+    for: "address",
+  },
+  {
+    label: "Email",
+    for: "email",
+  },
+  {
+    label: "Phone",
+    for: "phone",
   },
 ];
 
-export const shareCapitalData = [
+export const directorsContent =[
   {
     id: 1,
-    class: "Ordinary",
-    totalProposed: 1000,
-    currency: "HKD",
-    unitPrice: 1,
-    total: 1000,
-    paid: 200,
-    unpaid: 800,
-    rightsAttached: "Voting Rights",
+    type: "Person",
+    surname: "Kun Lee",
+    name: "Chang",
+    idNo: "313425",
+    address: "16 Chi Street",
+    email: "email1@gmail.com",
+    phone: "+12XXXXXXXXXX",
+    classOfShares: "Ordinary",
+    noOfShares: 200,
   },
   {
     id: 2,
-    class: "Preferance",
-    totalProposed: 1000,
-    currency: "USD",
-    unitPrice: 1,
-    total: 1000,
-    paid: 200,
-    unpaid: 800,
-    rightsAttached: "Voting Rights",
+    type: "Company",
+    surname: "-",
+    name: "Tencent Games Pvt Ltd.",
+    idNo: "313425",
+    address: "16 Kinjuo Street",
+    email: "email2@gmail.com",
+    phone: "+01XXXXXXXXX",
+    classOfShares: "Preferance",
+    noOfShares: 200,
   },
   {
     id: 3,
-    class: "Ordinary Class 1",
-    totalProposed: 1000,
-    currency: "EUR",
-    unitPrice: 1,
-    total: 1000,
-    paid: 0,
-    unpaid: 0,
-    rightsAttached: "Voting Rights",
+    type: "Person",
+    surname: "Minamoto",
+    name: "Riotsu",
+    idNo: "313425",
+    address: "16 Saitichi Street",
+    email: "email3@gmail.com",
+    phone: "+91XXXXXXXXX",
+    classOfShares: "Ordinary Class 1",
+    noOfShares: 0,
   },
-];
+]

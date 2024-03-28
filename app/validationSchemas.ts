@@ -1,17 +1,24 @@
 import { z } from "zod";
 
-export const ShareholdersFormSchema = z.object({
+const shareDetailsSchema = z.object({
+  classOfShares: z.string().max(255),
+  noOfShares: z.coerce
+    .number()
+    .nonnegative({ message: "This field can't be negative" })
+    .min(1),
+});
+
+export const DirectorsFormSchema = z.object({
   type: z.enum(["person", "company"], { required_error: "*required" }),
-  surname: z.string().min(2, "min. 2 char(s)").max(255).trim().nullable(),
-  name: z.string().min(2, "min. 2 char(s)").max(255).trim(),
-  idNo: z.string().max(100).trim(),
+  surname: z.string().min(2, "min. 2 char(s)").max(255).nullable(),
+  name: z.string().min(2, "min. 2 char(s)").max(255),
+  idNo: z.string().max(100),
   address: z
     .string({ required_error: "*required" })
     .min(10, "*required | need min. 10 characters")
-    .max(65535)
-    .trim(),
+    .max(65535),
   phone: z.string(),
-  email: z.string().max(255).email().trim().optional(),
+  email: z.string().max(255).email().optional(),
   idProof: z
     .any()
     .refine((file: string | any[]) => file?.length == 1, "File is required.")
