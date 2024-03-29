@@ -130,3 +130,74 @@ export const directorsContent =[
     noOfShares: 0,
   },
 ]
+
+export const shareCapitalRows = [
+  {
+    label: "Class of Shares",
+    for: "class",
+  },
+  {
+    label: "Total Shares Proposed",
+    for: "totalProposed",
+  },
+  {
+    label: "Currency",
+    for: "currency",
+  },
+  {
+    label: "Unit Price of Share",
+    for: "unitPrice",
+  },
+  {
+    label: "Total Amount",
+    for: "total",
+  },
+  {
+    label: "Total Capital Subscribed",
+    for: "paid",
+  },
+  {
+    label: "Unpaid Amount",
+    for: "unpaid",
+  },
+  {
+    label: "Particulars of Rights Attached",
+    for: "rightsAttached",
+  },
+];
+
+export const shareCapitalContent = [
+  {
+    id: 1,
+    class: "Ordinary",
+    totalProposed: 1000,
+    currency: "HKD",
+    unitPrice: 1,
+    total: 1000,
+    paid: 200,
+    unpaid: 800,
+    rightsAttached: "Voting Rights",
+  },
+  {
+    id: 2,
+    class: "Preferance",
+    totalProposed: 1000,
+    currency: "USD",
+    unitPrice: 1,
+    total: 1000,
+    paid: 200,
+    unpaid: 800,
+    rightsAttached: "Voting Rights",
+  },
+  {
+    id: 3,
+    class: "Ordinary Class 1",
+    totalProposed: 1000,
+    currency: "EUR",
+    unitPrice: 1,
+    total: 1000,
+    paid: 0,
+    unpaid: 0,
+    rightsAttached: "Voting Rights",
+  },
+];
