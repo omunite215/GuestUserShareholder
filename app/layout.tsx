@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Poppins as FontSans } from "next/font/google";
-
+import { Toaster } from "@/components/ui/toaster"
 const fontSans = FontSans({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -40,6 +40,7 @@ export default function RootLayout({
             <SiteHeader />
             <div className="container px-0  my-11">{children}</div>
           </main>
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
