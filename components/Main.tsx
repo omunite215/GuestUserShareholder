@@ -22,12 +22,10 @@ const Main = () => {
   return (
     <Card className="my-3">
       <CardHeader className="flex flex-row justify-between items-center">
-        <CardDescription>Guest Shareholder</CardDescription>
+        <CardDescription>Shareholder</CardDescription>
         <CardTitle>Minamoto Riotsu</CardTitle>
-        <CardDescription>Person</CardDescription>
       </CardHeader>
       <CardContent className="space-y-6">
-        <ShareCapital />
         <Collapsible open={isOpen} onOpenChange={setIsOpen} className="w-full">
           <Card>
             <div className="flex flex-1 justify-between items-center">
@@ -44,10 +42,14 @@ const Main = () => {
               </CollapsibleTrigger>
             </div>
             <CardContent className="space-y-6">
-              <CollapsibleContent className="CollapsibleContent">
+              <CollapsibleContent className="CollapsibleContent space-y-6">
+                <ShareCapital />
                 <DirectorsData />
               </CollapsibleContent>
-              <Directors />
+              <div className="space-y-6">
+                <CardTitle>Fill the information for shareholder</CardTitle>
+                <Directors />
+              </div>
             </CardContent>
           </Card>
         </Collapsible>
