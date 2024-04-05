@@ -23,7 +23,7 @@ const Main = () => {
   return (
     <Card className="my-3">
       <CardHeader className="flex flex-row justify-between items-center">
-        <CardDescription>Shareholder</CardDescription>
+        <CardDescription>Tencent Games Pvt. Ltd. / ABCD</CardDescription>
         <CardTitle>Minamoto Riotsu</CardTitle>
       </CardHeader>
       <CardContent className="space-y-6">
