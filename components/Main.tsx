@@ -16,6 +16,7 @@ import DirectorsData from "./DirectorsData";
 import { buttonVariants } from "./ui/button";
 import Directors from "./Forms/DirectorsMain";
 import ShareCapital from "./ShareCapital";
+import AssignedShares from "./AssignedShares";
 
 const Main = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -42,12 +43,13 @@ const Main = () => {
                 </span>
               </CollapsibleTrigger>
             </div>
-            <CardContent className="space-y-6">
+            <CardContent>
               <CollapsibleContent className="CollapsibleContent">
                 <DirectorsData />
               </CollapsibleContent>
-              <div className="space-y-6 my-6">
+              <div className="space-y-6 my-12">
                 <CardTitle>Fill the information for shareholder</CardTitle>
+                <AssignedShares/>
                 <Directors />
               </div>
             </CardContent>
