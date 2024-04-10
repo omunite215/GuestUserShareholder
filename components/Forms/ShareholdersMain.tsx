@@ -29,7 +29,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { PhoneInput } from "../ui/phone-input";
 
-const Directors = () => {
+const Shareholders = () => {
   const [disable, setDisable] = useState(false);
 
   const form = useForm<z.infer<typeof DirectorsFormSchema>>({
@@ -330,4 +330,4 @@ const Directors = () => {
   );
 };
 
-export default Directors;
+export default Shareholders;

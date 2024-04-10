@@ -12,11 +12,10 @@ import {
   CollapsibleTrigger,
 } from "@radix-ui/react-collapsible";
 import { useState } from "react";
-import DirectorsData from "./DirectorsData";
-import { buttonVariants } from "./ui/button";
-import Directors from "./Forms/DirectorsMain";
+import Shareholders from "./Forms/ShareholdersMain";
 import ShareCapital from "./ShareCapital";
-import AssignedShares from "./AssignedShares";
+import { buttonVariants } from "./ui/button";
+import ShareholdersData from "./ShareholdersData";
 
 const Main = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -45,16 +44,19 @@ const Main = () => {
             </div>
             <CardContent>
               <CollapsibleContent className="CollapsibleContent">
-                <DirectorsData />
+                <ShareholdersData/>
               </CollapsibleContent>
-              <div className="space-y-6 my-12">
-                <AssignedShares />
-                <CardTitle>Fill the information for shareholder</CardTitle>
-                <Directors />
-              </div>
             </CardContent>
           </Card>
         </Collapsible>
+        <Card>
+          <CardHeader>
+            <CardTitle>Fill in the information for Shareholder</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Shareholders />
+          </CardContent>
+        </Card>
       </CardContent>
     </Card>
   );

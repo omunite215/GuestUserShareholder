@@ -61,7 +61,7 @@ export const messagesContent = [
   },
 ];
 
-export const directorsRows = [
+export const shareholdersRows = [
   {
     label: "Person/Company",
     for: "type",
@@ -92,7 +92,7 @@ export const directorsRows = [
   },
 ];
 
-export const directorsContent =[
+export const shareholdersContent =[
   {
     id: 1,
     type: "Person",
