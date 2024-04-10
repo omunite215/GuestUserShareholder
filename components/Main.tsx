@@ -27,7 +27,7 @@ const Main = () => {
         <CardTitle>Minamoto Riotsu</CardTitle>
       </CardHeader>
       <CardContent className="space-y-6">
-      <ShareCapital />
+        <ShareCapital />
         <Collapsible open={isOpen} onOpenChange={setIsOpen} className="w-full">
           <Card>
             <div className="flex flex-1 justify-between items-center">
@@ -48,8 +48,8 @@ const Main = () => {
                 <DirectorsData />
               </CollapsibleContent>
               <div className="space-y-6 my-12">
+                <AssignedShares />
                 <CardTitle>Fill the information for shareholder</CardTitle>
-                <AssignedShares/>
                 <Directors />
               </div>
             </CardContent>
