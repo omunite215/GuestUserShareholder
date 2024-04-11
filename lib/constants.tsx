@@ -124,7 +124,7 @@ export const shareholdersContent =[
     name: "Riotsu",
     idNo: "-",
     address: "-",
-    email: "email3@gmail.com",
+    email: "riotsu.minamoto@gmail.com",
     phone: "-",
     classOfShares: "Ordinary Class 1",
     noOfShares: 0,
