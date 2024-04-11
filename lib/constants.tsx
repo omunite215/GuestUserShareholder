@@ -119,10 +119,10 @@ export const shareholdersContent =[
   },
   {
     id: 3,
-    type: "Person",
+    type: "Guest",
     surname: "Minamoto",
     name: "Riotsu",
-    idNo: "313425",
+    idNo: "-",
     address: "-",
     email: "email3@gmail.com",
     phone: "-",
