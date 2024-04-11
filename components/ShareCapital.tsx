@@ -5,7 +5,6 @@ import {
   CollapsibleTrigger,
 } from "@radix-ui/react-collapsible";
 import { useState } from "react";
-import Directors from "./Forms/DirectorsMain";
 import ShareCapitalData from "./ShareCapitalData";
 import { buttonVariants } from "./ui/button";
 import {
