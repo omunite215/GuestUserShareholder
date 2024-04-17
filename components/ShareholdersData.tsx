@@ -35,7 +35,7 @@ const ShareholdersData = () => {
             <TableRow
               key={item.id}
               className={cn({
-                "text-destructive": item.name === "Riotsu",
+                "text-destructive": item.type === "You",
               })}
             >
               <TableCell>{item.type}</TableCell>
